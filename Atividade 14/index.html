@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Atividade 14</title>
-</head>
-<body>
-    <h1>Formulario Principal</h1>
-    <form action="">
-        <label for="nome">Nome:</label><br>
-        <input type="text" name="nome" id="nome">
-        <br><label for="email">Email:</label><br>
-        <input type="email" name="email" id="email">
-        <br><label for="comentarios">Comentarios:</label><br>
-        <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <h1>Formulário Principal</h1>
+    <form name="meuForm" onsubmit="return Validar()">
+      <label for="nome">Nome:</label><br />
+      <input type="text" name="nome" id="nome" />
+      <br /><label for="email">Email:</label><br />
+      <input type="email" name="email" id="email" />
+      <br /><label for="comentarios">Comentários:</label><br />
+      <textarea
+        name="comentário"
+        id="comentario"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br />
+      <br />
+      <h1>Pesquisa:</h1>
+      <br />
+      <h1>Primeira vez nessa pagina?</h1>
+      <input type="radio" id="rbSim" value="sim" name="primeiraVez" />
+      <label for="rbSim">Sim</label>
+      <input type="radio" id="rbNao" name="primeiraVez" value="não" />
+      <label for="rbNao">Não</label><br />
+      <br />
+      <br />
+      <button type="submit">Enviar</button>
+      <button type="button" onclick="Limpar()">Limpar</button>
     </form>
-</body>
+  </body>
 </html>
