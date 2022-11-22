@@ -28,10 +28,5 @@ function Validar(){
 }
 
 function Limpar(){
-  var ele = document.meuForm.elements;
-  for (let index = 0; index < ele.length; index++) {
-    ele[index].value = ""
-    
-  }
-
+  document.meuForm.reset()
 }
